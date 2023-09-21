@@ -1,0 +1,12 @@
+spec:
+    inputs:
+        MY_IMAGE:
+            default: "ubuntu:20.04"
+
+---
+
+job:
+    image: "$[[ input.MY_IMAGE ]]"
+    stage: test
+    script:
+        - echo nop
