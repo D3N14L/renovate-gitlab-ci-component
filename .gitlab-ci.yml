@@ -1,0 +1,4 @@
+include:
+  - local: template.yml
+    inputs:
+      MY_IMAGE: "ubuntu:21.04"
